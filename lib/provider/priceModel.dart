@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 class PriceModel extends ChangeNotifier {
   double _priceValue = 0;
-  double _taxPercentValue = 0;
-  double _taxCalculatedValue = 0;
+  double _taxPercentValue = 15.0;
+  double _taxCalculatedValue = 0.0;
   double _totalValue = 0;
   double get priceValue => _priceValue;
 
