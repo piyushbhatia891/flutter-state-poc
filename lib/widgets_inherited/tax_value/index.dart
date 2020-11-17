@@ -28,7 +28,7 @@ class TaxValueInheritedWidgetState extends State<TaxValueInheritedWidget> {
   Widget build(BuildContext context) {
     _taxVal = MyStatefulWidget.of(context).taxCalculatedVal;
     return Text(
-      "${_taxVal}",
+      "Tip: ${_taxVal}",
       style: TextStyle(
         color: Colors.black,
       ),
