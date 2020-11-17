@@ -27,7 +27,7 @@ class TipFieldInheritedWidgetState extends State<TipFieldInheritedWidget> {
       initialValue: _tipPercent.toString(),
       decoration: InputDecoration(labelText: "Enter Tip Value"),
       onChanged: (val) {
-        state.updateTax(val);
+        state.updateTip(val);
       },
     );
   }
