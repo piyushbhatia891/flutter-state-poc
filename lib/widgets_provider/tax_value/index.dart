@@ -14,7 +14,7 @@ class TaxValueState extends State<TaxValue> {
   Widget build(BuildContext context) {
     return Consumer<PriceModel>(builder: (context, price, child) {
       return Text(
-        "${price.taxCalculatedVal}",
+        "Tip : ${price.taxCalculatedVal}",
         style: TextStyle(
           color: Colors.black,
         ),
