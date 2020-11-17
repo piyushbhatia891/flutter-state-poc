@@ -3,10 +3,10 @@ import 'package:flutter_price_cals/inherited/stateful_container.dart';
 import 'package:flutter_price_cals/inherited_widget_file.dart';
 
 class MyStatefulWidgetState extends State<MyStatefulWidget> {
-  double _priceValue = 0;
-  double _taxPercentValue = 0;
-  double _taxCalculatedValue = 0;
-  double _totalValue = 0;
+  double _priceValue = 0.0;
+  double _taxPercentValue = 15.0;
+  double _taxCalculatedValue = 0.0;
+  double _totalValue = 0.0;
   double get priceValue => _priceValue;
 
   double get taxPercentVal => _taxPercentValue;
