@@ -2,19 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:flutter_price_cals/provider/priceModel.dart';
 import 'package:provider/provider.dart';
 
-class TaxValue extends StatefulWidget {
+class TipValue extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    return TaxValueState();
+    return TipValueState();
   }
 }
 
-class TaxValueState extends State<TaxValue> {
+class TipValueState extends State<TipValue> {
   @override
   Widget build(BuildContext context) {
     return Consumer<PriceModel>(builder: (context, price, child) {
       return Text(
-        "${price.taxCalculatedVal}",
+        "Tip : ${price.tipCalculatedVal}",
         style: TextStyle(
           color: Colors.black,
         ),

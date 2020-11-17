@@ -14,7 +14,7 @@ class TotalPriceValueState extends State<TotalPriceValue> {
   Widget build(BuildContext context) {
     return Consumer<PriceModel>(builder: (context, price, child) {
       return Text(
-        "${price.totalVal}",
+        "Total : ${price.totalVal}",
         style: TextStyle(
           color: Colors.black,
         ),

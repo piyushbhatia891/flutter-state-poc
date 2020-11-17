@@ -29,7 +29,7 @@ class TotalPriceValueInheritedWidgetState
   Widget build(BuildContext context) {
     _totalVal = MyStatefulWidget.of(context).totalVal;
     return Text(
-      "${_totalVal}",
+      "Total : ${_totalVal}",
       style: TextStyle(
         color: Colors.black,
       ),

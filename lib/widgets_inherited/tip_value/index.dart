@@ -1,34 +1,31 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_price_cals/inherited/stateful_container.dart';
 import 'package:flutter_price_cals/inherited/stateful_container_state.dart';
-import 'package:flutter_price_cals/provider/priceModel.dart';
-import 'package:provider/provider.dart';
 
-class TaxValueInheritedWidget extends StatefulWidget {
+class TipValueInheritedWidget extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    return TaxValueInheritedWidgetState();
+    return TipValueInheritedWidgetState();
   }
 }
 
-class TaxValueInheritedWidgetState extends State<TaxValueInheritedWidget> {
-  PriceModel _priceModel;
+class TipValueInheritedWidgetState extends State<TipValueInheritedWidget> {
   MyStatefulWidgetState state;
-  double _taxVal = 0.0;
+  double _tipVal = 0.0;
   void initState() {
     super.initState();
   }
 
   void didChangeDependencies() {
     state = MyStatefulWidget.of(context);
-    _taxVal = state.taxCalculatedVal;
+    _tipVal = state.tipCalculatedVal;
   }
 
   @override
   Widget build(BuildContext context) {
-    _taxVal = MyStatefulWidget.of(context).taxCalculatedVal;
+    _tipVal = MyStatefulWidget.of(context).tipCalculatedVal;
     return Text(
-      "${_taxVal}",
+      "Tip : ${_tipVal}",
       style: TextStyle(
         color: Colors.black,
       ),

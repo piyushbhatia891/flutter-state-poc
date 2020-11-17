@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_price_cals/widgets_provider/price/index.dart';
-import 'package:flutter_price_cals/widgets_provider/tax/index.dart';
-import 'package:flutter_price_cals/widgets_provider/tax_value/index.dart';
+import 'package:flutter_price_cals/widgets_provider/tip/index.dart';
+import 'package:flutter_price_cals/widgets_provider/tip_value/index.dart';
 import 'package:flutter_price_cals/widgets_provider/total_value/index.dart';
 
 class ProviderBasedAppWidget extends StatelessWidget {
@@ -14,8 +14,8 @@ class ProviderBasedAppWidget extends StatelessWidget {
           children: [
             Expanded(child: SizedBox()),
             PriceField(),
-            TaxField(),
-            TaxValue(),
+            TipField(),
+            TipValue(),
             TotalPriceValue(),
             Expanded(child: SizedBox()),
           ],
